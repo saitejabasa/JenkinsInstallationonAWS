@@ -38,3 +38,4 @@ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 8) Add jenkins users other than Admin and then it is ready to use.
 9) Click on Manage Jenkins ? Manage plugins> Available Tab and search for Amazon EC2 plugin and install it without restart.
 10) Be sure to clean up after you are done with the AWS VM usage
+#End of the doc
