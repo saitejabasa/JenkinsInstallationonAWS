@@ -25,12 +25,13 @@ ssh -i /path/my-key-pair.pem ec2-user@ec2-198-51-100-1.compute-1.amazonaws.com
 and say yes when it asks to confirm the authenticity of the connection
 
 For linux: installation
-sudo yum update -y -- To update software packages
-1) sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo  -- To add the jenkins repo
+sudo su/bash --for getting root access
+yum update -y -- To update software packages
+1) wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo  -- To add the jenkins repo
 2) Import a key file from Jenkins-CI to enable installation from the package- 
-sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key  
-3) Install Jenkins: sudo yum install jenkins -y
-4) Start Jenkins:  sudo service jenkins start
+     rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key  
+3) Install Jenkins: yum install jenkins -y
+4) Start Jenkins:   service jenkins start
 5) use http://publicDNSname:8080 to access the first Admin login page
 6) Get the password from the path mentioned on the page
  /var/lib/jenkins/secrets/initialAdminPassword
