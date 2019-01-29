@@ -38,9 +38,9 @@ vi .bash_profile
 - echo $PATH /*This shoudl show java instlled path*/
 sudo su/bash --for getting root access
 yum update -y -- To update software packages
-1) wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo  -- To add the jenkins repo
+1) sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat/jenkins.repo  -- To add the jenkins repo
 2) Import a key file from Jenkins-CI to enable installation from the package- 
-     rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key  
+     sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key  
 3) Install Jenkins: yum install jenkins -y
 4) Start Jenkins:   service jenkins start
 5) use http://publicDNSname:8080 to access the first Admin login page
